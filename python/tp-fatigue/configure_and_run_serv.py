@@ -9,7 +9,7 @@ chdir("site")
 system("mkdir templates")
 system("touch templates/index.html")
 system("mkdir static")
-system("echo \"*/5 * * * * /tp-fatigue/site/app.py\" | crontab -")
+system("echo \"@reboot python3 /home/jere/cours-ynov/cours-script/cours-scripting/python/tp-fatigue/configure-and-run-serv.py\" | crontab -")
 
 with open('app.py', 'w') as f:
     f.write('''
