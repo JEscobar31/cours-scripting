@@ -10,7 +10,7 @@ while True:
         else:
             print("Error")
         print(rq.status_code)
-    except Exeption as e:
+    except Exception as e:
         print("reload serv")
         system("/site/app.py")
     sleep(10)
