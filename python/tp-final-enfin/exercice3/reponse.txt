@@ -1,0 +1,52 @@
+Question 1 : 
+
+La commande bash qui permet de télécharger le fichier zip est :
+curl http://www.3zsoftware.com/listes/liste_francais.zip > exo.zip
+
+
+Question 2 :
+La commande qui permet de dézipper le fichier zip est la suivante :
+unzip exo.zip
+
+La commande "unzip" n'est pas installé pour cela il faut executer la commande suivante:
+sudo apt-get install unzip (ubuntu)
+
+
+Question 3 :
+
+Tag -Eo :
+
+-E, --extended-regexp
+Interpréter le MOTIF comme une expression rationnelle étendue (ERE, voir plus loin). (-E est spécifiée par POSIX.)
+-o, --only-matching
+Afficher seulement les parties (non vides) correspondantes d'une ligne correspondant, avec chaque partie correspondante sur une ligne séparée.
+
+Il permet de pouvoir afficher seulement les parties de la ligne qui correspondents à l'expression régulières recherchée
+
+
+Question 4 : 
+
+Voici la commande qui permet d'obtenir le nombre de ligne dans le fichier :
+grep -Eo '\b.{1,20}\b' liste_francais.txt | wc -l
+
+Exemple :
+
+jere@LAPTOP-ADMIN:~/cours-ynov/cours-script/cours-scripting/python/tp-final-enfin/exercice3$3$ grep -Eo '\b.{1,20}\b' liste_francais.txt | wc -l
+21075  
+
+Question 5 : 
+Voici la commande qui permet d'obtenir tous les mots qui commencent par la lettre "b" et finissent par un "e"
+grep -Eo '\bb[^[:space:]]*e\b' liste_francais.txt | wc -l
+
+Question 6 :
+grep -Eo '\bba[bcdfghjklmnpqrstvwxz][aeiouy][^[:space:]]*e\b' liste_francais.txt | wc -l
+
+
+Question 7 : 
+grep -Eo '\bp[a-z]{4}e\b' liste_francais.txt | wc -l
+
+Question 8 :
+grep -Eo '\b([bcdfghjklmnpqrstvwxz][aeiouy])+[bcdfghjklmnpqrstvwxz]?\b' liste_francais.txt | wc -l
+
+
+

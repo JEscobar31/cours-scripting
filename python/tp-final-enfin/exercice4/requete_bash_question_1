@@ -1,0 +1,11 @@
+#!/bin/bash
+
+meme_name=$1
+txt_1=$2
+txt_2=$3
+
+url="http://apimeme.com/meme?meme=$meme_name&top=$txt_1&bottom=$txt_2"
+
+curl -s -o meme.png "$url"
+
+echo "name saved"

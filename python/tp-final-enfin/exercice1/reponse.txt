@@ -1,0 +1,73 @@
+************Bash************
+
+Qu'est ce que le "bash"
+
+Le "bash" est un shell utilisé principalement sur Unix et Linux, 
+il permet de pouvoir automatiser des tâches systèmes et d'executer 
+des commandes.
+
+Avantages ?
+
+Le bash possèdent énormement d'avantage. Voici une liste :
+- langage populaire et simple (on retrouve de la doc partout sur internet)
+- simplicité pour l'automatisation de tâches 
+- raccourcir des tâches du quotidien
+- libre et open source
+
+Inconvénients ?
+
+Comme toute technologie,  il y a aussi des inconvénients:
+- le langage reste limité en terme de fonctionnalités comme par exemple les boucles for 
+- le debug qui reste difficile : lecture des messages d'erreurs
+- lenteur d'execution car est un langage interprété
+
+
+************Python************
+
+Qu'est ce que le "python"
+
+Python est un langage de programmation open source simple et 
+accesible. Son apprentissage reste assez simple grâce aux nombres incalculable 
+de documentations sur Internet.
+
+
+Avantages ?
+
+- simplicité d'utilisation
+- open source
+- bibliothéque conséquente
+- flexibilité
+- communauté tres active sur les forums et site officiel
+
+
+Inconvénients ?
+
+- lenteur d'execution
+- simplicité : peux devenir usine à gaz dans le cas de très long programme
+- debug : typage, indentation
+- utilisation de base de données
+
+
+************Complémentarité entre bash et python************
+
+Effectivement, il y a une complémentarité entre bash et python car ils permettent d'automatiser 
+des tâches systèmes assez complexes ce qui permet d'augmenter l'eeficacité et de gagner du 
+temps.
+
+Exemple 1: 
+
+Automatisatiser le processus de sauvegarde d'une BDD MySQL.
+Dans ce cas la, bash nous permettra de faire la sauvegarde et python d'envoyer une notification 
+par email pour confirmer la sauvegarde.
+
+
+Exemple 2:
+
+Envoie d'email automatique avec un contenu spécifique à un destinaitaire ou à une liste de destinataire.
+Dans ce cas la, python enverra le mail à toute la liste de diffusion et bash de la planifer 
+avec crontab par exemple.
+
+
+
+
+
